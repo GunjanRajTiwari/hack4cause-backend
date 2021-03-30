@@ -1,0 +1,33 @@
+{
+  "name": "hack4cause-registration-backend",
+  "version": "1.0.0",
+  "description": "Backend for H4c '21",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ieeessitvit/hack4cause-registration-backend.git"
+  },
+  "author": "Abhinav Gorantla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ieeessitvit/hack4cause-registration-backend/issues"
+  },
+  "homepage": "https://github.com/ieeessitvit/hack4cause-registration-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.12.2",
+    "passport": "^0.4.1",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
