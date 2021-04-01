@@ -1,5 +1,6 @@
 const dotenv = require('dotenv');
 const express = require('express');
+const expressLayouts = require('express-ejs-layouts');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const session = require('express-session');
@@ -34,6 +35,12 @@ app.use(bodyParser.json());
 
 //Parse requests with "Content-Type": "application/x-www-form-urlencoded"
 app.use(bodyParser.urlencoded({ extended: true }));
+
+//Set view engine
+// EJS
+app.use(expressLayouts);
+app.set('view engine', 'ejs');
+app.use( express.static( "public" ) );
 
 //Sessions
 app.use(session({ 
