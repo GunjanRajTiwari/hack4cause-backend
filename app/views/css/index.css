@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+/* gradient used
+background: rgb(27,202,207);
+background: linear-gradient(135deg, rgba(27,202,207,1) 30%, rgba(26,200,137,1) 100%); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  color: #fff;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #323232;
+}
+
+/* .hero-title {
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0.5em 0.5em;
+} */
+
+.hero-title {
+  width: 60%;
+  display: block;
+  margin: 0 auto -0.5em;
+}
+
+.underline {
+  height: 6px;
+  width: 50%;
+  background: var(--red);
+  background: linear-gradient(135deg, var(--red) 30%, var(--pink) 100%);
+  margin: auto;
+  border-radius: 3px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  margin: 0.5em 0;
+}
+
+.hero button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2em 0.8em 1.2em 1.2em;
+  width: 14em;
+  margin: 1.6em auto;
+  border: 3px solid #323232;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  background: var(--red);
+  background: linear-gradient(135deg, var(--red) 30%, var(--pink) 100%);
+  transition: border 0.5s;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  border: 3px solid var(--red);
+  background: none;
+}
+
+.google {
+  position: absolute;
+  margin-left: -95px;
+}
+
+.hero p {
+  font-size: 90%;
+  width: 70%;
+  margin: auto;
+  line-height: 1.5;
+}
+
+.hero div {
+  margin: 1em 0;
+}
+
+/* media queries */
+@media only screen and (max-width: 728px) {
+  .hero-title {
+    width: 100%;
+  }
+}

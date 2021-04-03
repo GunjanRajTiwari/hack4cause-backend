@@ -1,0 +1,32 @@
+:root {
+  --red: #c54441;
+  --pink: #d55795;
+  --dark: #323232;
+}
+
+/* Cody */
+
+.cody {
+  position: absolute;
+  width: 20vw;
+}
+
+.cody-red {
+  left: 2%;
+}
+
+.cody-pink {
+  right: 2%;
+}
+
+/* media queries */
+@media only screen and (max-width: 728px) {
+  .form-cody {
+    display: none;
+  }
+
+  .cody {
+    margin-top: 25%;
+    width: 16vw;
+  }
+}
