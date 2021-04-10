@@ -68,6 +68,10 @@ app.get("/register", (req, res) => {
     res.render("index.ejs");
 });
 
+app.get("/thanks", (req, res) => {
+    res.render("thanks.ejs");
+});
+
 app.use("/auth/", authRouter);
 app.use("/user/", userRouter);
 

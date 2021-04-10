@@ -12,12 +12,12 @@ router.get(
     "/google/callback",
     passport.authenticate("google", { failureRedirect: "/" }),
     (req, res) => {
-        res.redirect("/auth/authDone");
+        res.redirect("/thanks");
     }
 );
 
-router.get("/authDone", (req, res) => {
-    res.render("thanks.ejs");
-});
+// router.get("/authDone", (req, res) => {
+//     res.render("thanks.ejs");
+// });
 
 module.exports = router;
