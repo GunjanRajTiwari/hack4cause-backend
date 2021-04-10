@@ -61,7 +61,7 @@ app.use(passport.session());
 
 //Basic route
 app.get("/", (req, res) => {
-    res.send({ message: "Hack4Cause registration portal backend." });
+    res.redirect("/register");
 });
 
 app.get("/register", (req, res) => {
