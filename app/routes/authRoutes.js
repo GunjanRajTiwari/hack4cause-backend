@@ -12,7 +12,7 @@ router.get(
     "/google/success",
     passport.authenticate("google", { failureRedirect: "/auth/google/failure" }),
     (req, res) => {
-        res.redirect("/thanks");
+        res.render("thanks.ejs");
     }
 );
 
